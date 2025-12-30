@@ -1,4 +1,8 @@
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <h1>Welcome to Tailwind.css</h1>
+    </>
+  );
 };
 export default page;
