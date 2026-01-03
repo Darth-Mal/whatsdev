@@ -1,11 +1,12 @@
 import ExploreBtn from "@/components/ExploreBtn";
+import EventCard from "@/components/EventCard";
 
 const page = () => {
   return (
     <>
       <section className="flex flex-col h-screen justify-center">
         <h1 className="text-center ">
-          Learn about every event <br /> Event you can't miss
+          Learn about every event <br /> you can't miss
         </h1>
         <p className="text-center mt-5">
           Hackathons, Meetups and Conferences all in one place
@@ -18,7 +19,10 @@ const page = () => {
 
           <ul className="events">
             {[1, 2, 3, 4, 5].map((event) => (
-              <li key={event}> Event {event}</li>
+              <li key={event}>
+                {" "}
+                <EventCard /> {event}
+              </li>
             ))}
           </ul>
         </div>
